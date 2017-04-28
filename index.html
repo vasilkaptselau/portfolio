@@ -16,7 +16,7 @@
 	<link href="styles/animate.css" rel="stylesheet"/>
 	<script src="//cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script> 
     <script type="text/javascript" src="http://arrow.scrolltotop.com/arrow6.js"></script>
-   
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/gsap/1.19.0/TweenMax.min.js"></script>
     <title>Vasil Kaptselau</title>
 </head>
 
@@ -236,7 +236,14 @@ function jumpScroll() {
    	window.scroll(0,3800); // horizontal and vertical scroll targets
 }
 </script>
-
-
+<script type="text/javascript">
+		(function(){
+			var tle = new TimelineMax();
+			tle.to('.subtitle', 1.5, {rotation: -180, ease: Bounce.easeInOut}, '.subtitle-=1')
+				.to('.subtitle', .5, {color: 'orange', fontSize: 20, fontFamily: 'magneto'})
+				.to('.subtitle', 1.5, {rotation: -360,  ease: Back.easeInOut})
+				.to('.subtitle', 1, {fontFamily: 'planetium-x_bold_demoregular', color: 'black'});
+			}());
+</script>
 </body>
 </html>
