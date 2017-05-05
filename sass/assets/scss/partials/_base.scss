@@ -1,0 +1,337 @@
+ /*Mixin*/
+ @mixin border-radius ($radius){
+    -webkit-border-radius: $radius;
+    -moz-border-radius: $radius;
+    border-radius: $radius;
+}
+ 
+ 
+ 
+ 
+ 
+ /*Images*/
+    .item1,.item2,.item3{
+        margin-left:1px;
+        
+  }
+
+.MyLogo{
+		visibility: hidden;
+       
+  }
+  .menu {
+    max-height: 0;
+    overflow: hidden;
+    float: none;
+    text-align: center;
+    width: 100%;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+	margin-left: -20px;
+    
+	
+  }
+
+  .menu.menuOpen {
+    max-height: 1000px;
+    -webkit-transition: max-height 0.5s;
+    -moz-transition: max-height 0.5s;
+    transition: max-height 0.5s;
+    max-width: 100%;
+    
+  }
+  
+  .menu ul li {
+    display: block;
+    width: 100%;
+    background: #42d4f4;
+    border-top: 10px solid white;
+	height: 50px;
+	padding-top: 25px;
+	font-family: $family;
+    font-variant: $fvar;
+    font-weight: $fweight;
+    
+	
+	
+  }
+  .menu ul li:hover {
+    background: #baf0fc;
+  }
+  .menu ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 0;
+    width: 100%;
+	
+  }
+  
+.header .menuIcon {
+    display: inline-block;
+	height: 50px;
+	width: 100%;
+    text-align: center;
+    margin-top: -10px;
+    
+}
+.menuIcon{
+    animation: spin 10s linear infinite; 
+}
+@keyframes spin{
+    100%{transform: rotate(1turn);}
+}
+
+
+ /*My Picture section*/
+  
+.MyPicture {
+    background: url(../Images/vasil_3x.jpg)   no-repeat center center fixed;
+    background-size: 100%;
+    background-position: 0 0px;
+    height: 500px;
+	
+}
+.text{
+    
+    color: white;
+    margin-left: 60%;
+    padding-top: 2%;
+}
+.text p{
+        font-family: 'Audiowide', cursive;
+        font-weight: lighter;
+        line-height: 1.5;
+        letter-spacing: 0.5pt;
+        font-size: 12px;
+    }
+.text h2{
+    font-family: $family;
+    font-variant: $fvar;
+    font-weight: $fweight;
+    text-align: center;
+}
+img {
+    max-width: 100%; 
+    height: auto ;
+   }
+.descrip1{
+    margin-top: 45px;
+    
+ }
+ .descrip1,.descrip2,.descrip3{
+    font-family: 'Audiowide', cursive;
+    font-weight: $fweight;
+    letter-spacing: 0.8pt;
+    vertical-align: top;
+    line-height: 1.5;
+    padding-left: 7px;
+    
+ }
+ h3{
+    text-align: center;
+ }
+ .item1,.descrip1{
+    margin-top: 5%;
+    
+ }
+  /*Feedback section*/
+  
+  .feedback{
+		background-color: #baf0fc;
+		line-height: 1.5;
+		margin-top:auto;
+		
+  }
+    .img-circle {
+    @include border-radius(10%);
+	width: 25%;
+	margin-bottom: 20px;
+	margin-left: 40%;
+}
+.author{
+    margin-left: 60%;
+}
+.author2{
+    margin-left: 80%;
+}
+.user_feedback{
+		display:block;
+		margin: 0px;
+		padding: 20px 0 5px 0;
+		width: 100%;
+		border: hidden;
+		border-bottom: 10px solid white;
+		
+}
+.user_feedback p{
+        font-family: 'Audiowide', cursive;
+        font-weight: $fweight;
+		padding: 0 5px 0 8px;
+}
+#slid6{
+    margin-bottom: -17px;
+}
+
+@media screen and (min-width: 767px){
+.title, .subtitle{
+    margin-top: 40px;
+    }
+.MyLogo{
+    visibility: visible;
+	position: absolute;
+	margin: -15px 0 0 -5px;
+	width: 200px;
+			
+	}
+    
+/*Menu*/
+.menu ul li a{
+    position: absolute;
+    margin-left: 5px;
+    color:black;
+    background: white;
+    border-top: none;
+	height: 0px;
+	padding-top: 0px;
+    width: 10px;
+    font-family: 'planetium-x_bold_demoregular';
+    font-variant: small-caps;
+    font-weight: lighter;
+    margin-top: -200px;
+    
+}
+
+a:hover{
+    color:gray;
+}
+.menu ul {
+  padding: 0;
+  margin-left: 80%;
+  
+}
+.menu ul li {
+  display: inline-block;
+  height: 0px;
+ 
+  
+}
+
+.menuIcon {
+  visibility: hidden;
+  
+}
+
+    
+/*Description of Project*/
+ .descrip1,.descrip2,.descrip3{
+    margin-left: 10px;
+    margin-top: -20px;
+    width: 47%;
+    font-family: 'Audiowide', cursive;
+    font-weight: lighter;
+    vertical-align: top;
+    line-height: 1.5;
+ }
+ .item1,.item2,.item3,.descrip1,.descrip2,.descrip3{
+    display: inline-block;
+  
+ }
+ .item1,.item2,.item3{
+    margin-left:0px;
+    max-width: 50%;
+    margin-bottom: 10px;
+ 
+}
+.descrip1{
+    margin-top: 0px;
+    
+ }
+
+  h3~p{
+    text-align: justify;
+    
+}
+ /*Text on top of my image*/
+ .text h2{
+    font-size: xx-large;
+ }
+ .text h4{
+    font-size:x-large;
+ }
+ .text p{
+    padding-top: 15px;
+    letter-spacing: 3pt;
+    line-height: 1.4;
+    font-size:12pt;
+}
+/*Feedback section*/
+.feedback p{
+		padding-left: 5px;
+		margin-bottom: 70px;
+}
+.feedback{
+    width: 100%;
+}
+.user_feedback{
+		border: 5px solid white;
+		box-sizing: border-box;
+		color: #444;
+		display: inline-block ;
+		margin: 0.5%;
+        margin-right: 0px;
+		margin-bottom: 20px;
+		padding: 1em;
+		width: 32.2%;
+}
+/*Screenshots section*/
+#slid1,#slid2,#slid3,#slid4,#slid5,#slid6{
+  width:100%;
+}
+/*Footer*/
+footer>h2{
+    font-size: 24pt;
+}
+footer p{
+    font-size: 10pt;
+}
+footer .icon, footer .icon1{
+    display: inline-block;
+    margin-bottom: 70px;
+    
+}
+footer .icon:not(.icon1){
+    margin-right: 30px;
+}
+.icon:hover{
+    
+}
+}
+@media screen and (min-width: 1024px){
+    .text p{
+        line-height: 1.8;
+        
+    }
+.feedback{
+    width: 100%;
+}
+.user_feedback{
+    width: 32.3%;
+}
+.descrip1,.descrip2,.descrip3{
+    width: 27%;
+}
+.item1,.item2,.item3{
+    max-width: 70%;
+}   
+.descrip1{
+    margin-top: 45px;
+    
+ }
+footer{
+    margin-top: 20px;
+}
+#slid6{
+    margin-bottom: -37px;
+}
+}    
