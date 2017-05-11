@@ -1,0 +1,36 @@
+footer{ clear: both;
+    position: static;
+    text-align: center;
+	font-size:15px;
+    background-color: #444;
+    height: 400px;
+    margin-top: 0px;
+    padding-top: 30px;
+    
+	font-family: $family;
+	font-variant: $fvar;
+	font-weight: $fweight;
+	font-size: $fsize;
+
+    h2{
+    font-size: 24pt;
+    letter-spacing: 3pt;
+    }
+    h4{
+    margin-top: 30px;
+    font-size:12pt;
+    letter-spacing: 3pt;
+    color: white;
+    }
+    a:link{
+    color: blue;
+    }
+    .icon{
+    display: inline-block;
+    margin-top: 70px;
+    margin-bottom: 80px;
+   }
+}
+footer>p{
+    font-size: xx-small;
+}
