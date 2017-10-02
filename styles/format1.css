@@ -6,8 +6,8 @@ h1,h4{
 
  h1,h4{
 	font-family: 'planetium-x_bold_demoregular';
-    font-variant: small-caps;
-    font-weight: lighter;
+        font-variant: small-caps;
+        font-weight: lighter;
 }
 .title{
     
@@ -33,7 +33,7 @@ h1,h4{
     -webkit-transition: max-height 0.5s;
     -moz-transition: max-height 0.5s;
     transition: max-height 0.5s;
-	margin-left: -20px;
+    margin-left: -20px;
     
 	
   }
@@ -159,6 +159,10 @@ img {
     
  }
  h3{
+    text-align: center;
+    font-family: 'planetium-x_bold_demoregular';
+    font-variant: small-caps;
+    font-weight: lighter;
     text-align: center;
  }
  .item1,.descrip1{
