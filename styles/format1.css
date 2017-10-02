@@ -194,9 +194,9 @@ img {
 		
 }
 .user_feedback p{
-        font-family: 'Audiowide', cursive;
+        font-family: 'Roboto', sans-serif;
         font-weight: lighter;
-		padding: 0 5px 0 8px;
+	padding: 0 5px 0 8px;
 }
 #slid6{
     margin-bottom: -17px;
@@ -303,7 +303,7 @@ a:hover{
     margin-left: 10px;
     margin-top: -20px;
     width: 47%;
-    font-family: 'Audiowide', cursive;
+    font-family: 'Roboto', sans-serif;
     font-weight: lighter;
     vertical-align: top;
     line-height: 1.5;
@@ -354,7 +354,7 @@ a:hover{
 		color: #444;
 		display: inline-block ;
 		margin: 0.5%;
-        margin-right: 0px;
+        	margin-right: 0px;
 		margin-bottom: 20px;
 		padding: 1em;
 		width: 32.2%;
