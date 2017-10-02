@@ -4,7 +4,7 @@ h1,h4{
     
 }
 
- h1,h4{
+ h1,h2,h3,h4{
 	font-family: 'planetium-x_bold_demoregular';
         font-variant: small-caps;
         font-weight: lighter;
@@ -160,10 +160,7 @@ img {
  }
  h3{
     text-align: center;
-    font-family: 'planetium-x_bold_demoregular';
-    font-variant: small-caps;
-    font-weight: lighter;
-    text-align: center;
+    
  }
  .item1,.descrip1{
     margin-top: 5%;
